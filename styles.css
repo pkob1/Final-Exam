@@ -1,0 +1,234 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+a{
+    color: red;
+}
+
+a:hover{
+    background-color: red;
+    color: yellow;
+}
+
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: red;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Quicksand','Arial';
+    font-weight: 300;
+    font-size:20px;
+    text-rendering: optimizeLegibility;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: red;
+}
+
+
+.employees{
+    border: solid 2px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0 auto 10px;
+    padding: 15px;
+}
+
+.menu{
+    border: solid 2px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0 auto 10px;
+    padding: 15px;
+}
+
+.orders{
+    border: solid 2px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0 auto 10px;
+    padding: 15px;
+}
+
+.navi-menu{
+    text-align:right; 
+    background-color: red;
+    line-height: 35px; 
+}
+
+.nav a{
+    display: inline;
+    padding: 0.5em 0.75em;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav a:hover{
+    background-color: yellow;
+}
+
+
+.nav .current{
+    background-color: yellow;
+}
+
+.logo-top{
+    height: 60px;
+    width: 150px;
+    text-align: left;
+}
+
+#logo-footer{
+    height: 40px
+}
+
+.papaye{
+    margin: auto;
+    text-align: center;
+}
+
+.footer-whole{
+    background-color: red;
+    padding-top: 48px;
+    padding: 16px;
+    color: black;
+}
+
+.contact{
+    text-align: left;
+    text-decoration: solid;
+}
+
+.papaye{
+    text-align: right;
+}
+
+.employee-form{
+    border: solid 2px;
+    width: 500px;
+    border: 3px solid black;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: left;
+    text-align: center;
+    color: black;
+}
+
+.employee-form input{
+    padding: 5px 6px;
+    width: 40em;
+    margin: 3%;
+}
+
+.employee-form label{
+    font-weight: bold;
+    padding: 5px 6px;
+    margin: 1%;
+}
+
+
+.submit-btn:hover,
+.submit-btn:active{
+    background-color:red;
+    color: yellow;
+}
+
+table { 
+	width: 100%; 
+	border-collapse: collapse; 
+    margin:50px auto;
+    border: solid 3px black;
+}
+
+.remove-employee{
+    text-align: center;
+    border: solid 3px black;
+    color: black;
+}
+
+.menu-form{
+    border: solid 2px;
+    width: 500px;
+    border: 3px solid black;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: left;
+    text-align: center;
+    color: black;
+}
+
+.menu-form input{
+    width: 40em;
+}
+
+.submit-menu:hover,
+.submit-menu:active{
+    background-color: red;
+    color: yellow;
+}
+
