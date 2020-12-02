@@ -6,31 +6,22 @@
    
    <body>
       <?php
+         include 'dbConn.php';
          if(isset($_POST['update'])) {
-            $dbhost = 'localhost:3036';
-            $dbuser = 'root';
-            $dbpass = 'rootpassword';
             
-            $conn = mysql_connect($dbhost, $dbuser, $dbpass);
+            $emp_id = $_POST['staff_id'];
+            $emp_salary = $_POST['firstName'];
             
-            if(! $conn ) {
-               die('Could not connect: ' . mysql_error());
-            }
-            
-            $emp_id = $_POST['emp_id'];
-            $emp_salary = $_POST['emp_salary'];
-            
-            $sql = "UPDATE employee ". "SET emp_salary = $emp_salary ". 
-               "WHERE emp_id = $emp_id" ;
-            mysql_select_db('test_db');
-            $retval = mysql_query( $sql, $conn );
+            $sql = "UPDATE staff ". "SET fname = $emp_salary ". 
+               "WHERE id = $emp_id" ;
+            $retval = mysqli_query($connection, $sql );
             
             if(! $retval ) {
-               die('Could not update data: ' . mysql_error());
+               die('Could not update data: ' . mysqli_error());
             }
             echo "Updated data successfully\n";
             
-            mysql_close($conn);
+            mysql_close($connection);
          }else {
             ?>
                <form method = "post" action = "<?php $_PHP_SELF ?>">
@@ -39,13 +30,13 @@
                   
                      <tr>
                         <td width = "100">Employee ID</td>
-                        <td><input name = "emp_id" type = "text" 
+                        <td><input name = "staff_id" type = "text" 
                            id = "emp_id"></td>
                      </tr>
                   
                      <tr>
-                        <td width = "100">Employee Salary</td>
-                        <td><input name = "emp_salary" type = "text" 
+                        <td width = "100">Employee First Name</td>
+                        <td><input name = "firstName" type = "text" 
                            id = "emp_salary"></td>
                      </tr>
                   

@@ -69,7 +69,7 @@
                 <td><?php echo $data['firstName']; ?></td>
                 <td><?php echo $data['lastName']; ?></td>
                 <td><a href="delete.php?id=<?php echo $data['id']; ?>">Delete</a></td>
-                <td><a href="edit-worker.php?userid=<?php echo $data['id']; ?>">Update</a></td>
+                <td><a href="try.php?userid=<?php echo $data['id']; ?>">Update</a></td>
             </tr>
         <?php
         }
